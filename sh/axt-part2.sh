@@ -226,12 +226,12 @@ cp -rf ../../kiddin9/luci-app-quickstart/* luci-app-quickstart
 # 5G通信模组拨号工具
 mkdir quectel_QMI_WWAN
 mkdir quectel_cm_5G
-mkdir quectel_MHI
-mkdir luci-app-hypermodem
+# mkdir quectel_MHI
+# mkdir luci-app-hypermodem
 cp -rf ../../Modem-Support/quectel_QMI_WWAN/* quectel_QMI_WWAN
 cp -rf ../../Modem-Support/quectel_cm_5G/* quectel_cm_5G
-cp -rf ../../Modem-Support/quectel_MHI/* quectel_MHI
-cp -rf ../../Modem-Support/luci-app-hypermodem/* luci-app-hypermodem
+# cp -rf ../../Modem-Support/quectel_MHI/* quectel_MHI
+# cp -rf ../../Modem-Support/luci-app-hypermodem/* luci-app-hypermodem
 
 # 5G模组短信插件
 mkdir sms-tool
@@ -243,6 +243,7 @@ cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* 
 # 5G模组信息插件+AT工具
 mkdir luci-app-modem
 cp -rf ../../Modem-Support/luci-app-modem/* luci-app-modem
+sed -i 's/+kmod-pcie_mhi \\//' luci-app-modem/Makefile
 popd
 
 # 5G模组拨号脚本
