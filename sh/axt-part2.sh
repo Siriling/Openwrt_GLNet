@@ -218,6 +218,12 @@ cp -rf ../../kiddin9/dnsforwarder/* shortcut-dnsforwarder
 cp -rf ../../kiddin9/shortcut-fe/* shortcut-fe
 cp -rf ../../kiddin9/luci-app-turboacc/* luci-app-turboacc
 
+#主题
+mkdir luci-theme-argon
+mkdir luci-app-argon-config
+cp -rf ../../kiddin9/luci-theme-argon/* luci-theme-argon
+cp -rf ../../kiddin9/luci-app-argon-config/* luci-app-argon-config
+
 # iStore应用
 mkdir taskd
 mkdir luci-lib-taskd
