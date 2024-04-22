@@ -138,14 +138,14 @@ mkdir luci-app-openclash
 cp -rf ../../kiddin9/luci-app-openclash/* luci-app-openclash
 cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-openclash/* luci-app-openclash
 #加入OpenClash核心
-chmod -R a+x $GITHUB_WORKSPACE/scripts/preset-clash-core.sh
-if [ "$1" = "rk33xx" ]; then
-    $GITHUB_WORKSPACE/scripts/preset-clash-core.sh arm64
-elif [ "$1" = "rk35xx" ]; then
-    $GITHUB_WORKSPACE/scripts/preset-clash-core.sh arm64
-elif [ "$1" = "x86" ]; then
-    $GITHUB_WORKSPACE/scripts/preset-clash-core.sh amd64
-fi
+# chmod -R a+x $GITHUB_WORKSPACE/scripts/preset-clash-core.sh
+# if [ "$1" = "rk33xx" ]; then
+#     $GITHUB_WORKSPACE/scripts/preset-clash-core.sh arm64
+# elif [ "$1" = "rk35xx" ]; then
+#     $GITHUB_WORKSPACE/scripts/preset-clash-core.sh arm64
+# elif [ "$1" = "x86" ]; then
+#     $GITHUB_WORKSPACE/scripts/preset-clash-core.sh amd64
+# fi
 
 # 去广告
 #ADGuardHome（kiddin9）
@@ -214,7 +214,7 @@ mkdir dnsforwarder
 mkdir shortcut-fe
 mkdir luci-app-turboacc
 cp -rf ../../kiddin9/pdnsd-alt/* pdnsd-alt
-cp -rf ../../kiddin9/dnsforwarder/* shortcut-dnsforwarder
+cp -rf ../../kiddin9/dnsforwarder/* dnsforwarder
 cp -rf ../../kiddin9/shortcut-fe/* shortcut-fe
 cp -rf ../../kiddin9/luci-app-turboacc/* luci-app-turboacc
 
@@ -255,7 +255,7 @@ cp -rf ../../Modem-Support/sms-tool/* sms-tool
 cp -rf ../../Modem-Support/luci-app-sms-tool/* luci-app-sms-tool
 cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* luci-app-sms-tool
 
-# 5G模组管理插件
+# 5G模组管理插件+AT工具
 mkdir luci-app-modem
 cp -rf ../../Modem-Support/luci-app-modem/* luci-app-modem
 sed -i 's/+kmod-pcie_mhi \\//' luci-app-modem/Makefile
