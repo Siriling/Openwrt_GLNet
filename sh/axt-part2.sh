@@ -53,10 +53,13 @@ pushd package/community
 #Cpufreq
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-cpufreq
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-mac-vendor
+mkdir cpufreq
 mkdir luci-app-cpufreq
+cp -rf ../../kiddin9/cpufreq/* cpufreq
 cp -rf ../../kiddin9/luci-app-cpufreq/* luci-app-cpufreq
 #Fan
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-fan
+mkdir fancontrol
 mkdir luci-app-fancontrol
 cp -rf ../../JiaY-shi/fancontrol/* fancontrol
 cp -rf ../../JiaY-shi/luci-app-fancontrol/* luci-app-fancontrol
@@ -210,18 +213,18 @@ mkdir luci-app-turboacc
 cp -rf ../../kiddin9/luci-app-turboacc/* luci-app-turboacc
 
 # iStore应用
-mkdir taskd
-mkdir luci-lib-taskd
-mkdir luci-lib-xterm
-mkdir luci-app-store
-mkdir quickstart
-mkdir luci-app-quickstart
-cp -rf ../../kiddin9/taskd/* taskd
-cp -rf ../../kiddin9/luci-lib-taskd/* luci-lib-taskd
-cp -rf ../../kiddin9/luci-app-xterm/* luci-app-xterm
-cp -rf ../../kiddin9/luci-app-store/* luci-app-store
-cp -rf ../../kiddin9/quickstart/* quickstart
-cp -rf ../../kiddin9/luci-app-quickstart/* luci-app-quickstart
+# mkdir taskd
+# mkdir luci-lib-taskd
+# mkdir luci-lib-xterm
+# mkdir luci-app-store
+# mkdir quickstart
+# mkdir luci-app-quickstart
+# cp -rf ../../kiddin9/taskd/* taskd
+# cp -rf ../../kiddin9/luci-lib-taskd/* luci-lib-taskd
+# cp -rf ../../kiddin9/luci-app-xterm/* luci-app-xterm
+# cp -rf ../../kiddin9/luci-app-store/* luci-app-store
+# cp -rf ../../kiddin9/quickstart/* quickstart
+# cp -rf ../../kiddin9/luci-app-quickstart/* luci-app-quickstart
 
 # 5G通信模组拨号工具
 mkdir quectel_QMI_WWAN
