@@ -64,8 +64,8 @@ mkdir luci-app-fancontrol
 cp -rf ../../JiaY-shi/fancontrol/* fancontrol
 cp -rf ../../JiaY-shi/luci-app-fancontrol/* luci-app-fancontrol
 #Poweroff
-mkdir luci-app-poweroff
-cp -rf ../../kiddin9/luci-app-poweroff/* luci-app-poweroff
+# mkdir luci-app-poweroff
+# cp -rf ../../kiddin9/luci-app-poweroff/* luci-app-poweroff
 #Diskman
 mkdir luci-app-diskman
 cp -rf ../../kiddin9/luci-app-diskman/* luci-app-diskman
@@ -80,21 +80,20 @@ mkdir luci-app-onliner
 cp -rf ../../kiddin9/luci-app-onliner/* luci-app-onliner
 #svn export https://github.com/rufengsuixing/luci-app-onliner/trunk luci-app-onliner
 #Eqos
-#svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-eqos
-mkdir luci-app-eqos
-cp -rf ../../kiddin9/luci-app-eqos/* luci-app-eqos
+# mkdir luci-app-eqos
+# cp -rf ../../kiddin9/luci-app-eqos/* luci-app-eqos
 #Wolplus
 mkdir luci-app-wolplus
 cp -rf ../../kiddin9/luci-app-wolplus/* luci-app-wolplus
 #WiFischedule
-mkdir luci-app-wifischedule
-cp -rf ../../kiddin9/luci-app-wifischedule/* luci-app-wifischedule
+# mkdir luci-app-wifischedule
+# cp -rf ../../kiddin9/luci-app-wifischedule/* luci-app-wifischedule
 #RAMfree
 mkdir luci-app-ramfree
 cp -rf ../../kiddin9/luci-app-ramfree/* luci-app-ramfree
 #终端
-mkdir luci-app-ttyd
-cp -rf ../../kiddin9/luci-app-ttyd/* luci-app-ttyd
+# mkdir luci-app-ttyd
+# cp -rf ../../kiddin9/luci-app-ttyd/* luci-app-ttyd
 
 # 存储相关应用
 # Gowebdav
