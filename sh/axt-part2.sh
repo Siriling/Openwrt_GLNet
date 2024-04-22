@@ -209,8 +209,8 @@ cp -rf ../../kiddin9/luci-app-unblockneteasemusic/* luci-app-unblockneteasemusic
 # svn export https://github.com/destan19/OpenAppFilter/trunk OpenAppFilter
 
 #硬件加速
-mkdir luci-app-turboacc
-cp -rf ../../kiddin9/luci-app-turboacc/* luci-app-turboacc
+# mkdir luci-app-turboacc
+# cp -rf ../../kiddin9/luci-app-turboacc/* luci-app-turboacc
 
 # iStore应用
 # mkdir taskd
