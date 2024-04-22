@@ -219,18 +219,18 @@ cp -rf ../../kiddin9/shortcut-fe/* shortcut-fe
 cp -rf ../../kiddin9/luci-app-turboacc/* luci-app-turboacc
 
 # iStore应用
-# mkdir taskd
-# mkdir luci-lib-taskd
-# mkdir luci-lib-xterm
-# mkdir luci-app-store
-# mkdir quickstart
-# mkdir luci-app-quickstart
-# cp -rf ../../kiddin9/taskd/* taskd
-# cp -rf ../../kiddin9/luci-lib-taskd/* luci-lib-taskd
-# cp -rf ../../kiddin9/luci-app-xterm/* luci-app-xterm
-# cp -rf ../../kiddin9/luci-app-store/* luci-app-store
-# cp -rf ../../kiddin9/quickstart/* quickstart
-# cp -rf ../../kiddin9/luci-app-quickstart/* luci-app-quickstart
+mkdir taskd
+mkdir luci-lib-taskd
+mkdir luci-lib-xterm
+mkdir luci-app-store
+mkdir quickstart
+mkdir luci-app-quickstart
+cp -rf ../../kiddin9/taskd/* taskd
+cp -rf ../../kiddin9/luci-lib-taskd/* luci-lib-taskd
+cp -rf ../../kiddin9/luci-lib-xterm/* luci-lib-xterm
+cp -rf ../../kiddin9/luci-app-store/* luci-app-store
+cp -rf ../../kiddin9/quickstart/* quickstart
+cp -rf ../../kiddin9/luci-app-quickstart/* luci-app-quickstart
 
 # 5G通信模组拨号工具
 mkdir quectel_QMI_WWAN
@@ -249,7 +249,7 @@ cp -rf ../../Modem-Support/sms-tool/* sms-tool
 cp -rf ../../Modem-Support/luci-app-sms-tool/* luci-app-sms-tool
 cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* luci-app-sms-tool
 
-# 5G模组信息插件+AT工具
+# 5G模组管理插件
 mkdir luci-app-modem
 cp -rf ../../Modem-Support/luci-app-modem/* luci-app-modem
 sed -i 's/+kmod-pcie_mhi \\//' luci-app-modem/Makefile
