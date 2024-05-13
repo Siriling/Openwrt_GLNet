@@ -29,8 +29,8 @@ env:
   REPO_BRANCH: ipq60xx-devel
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ./config/axt1800.config
-  DIY_P1_SH: ./sh/axt-part1.sh
-  DIY_P2_SH: ./sh/axt-part2.sh
+  DIY_P1_SH: ./scripts/axt-part1.sh
+  DIY_P2_SH: ./scripts/axt-part2.sh
   UPLOAD_BIN_DIR: true
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
