@@ -46,8 +46,8 @@ pushd MyConfig
 git clone --depth=1 https://github.com/Siriling/OpenWRT-MyConfig .
 popd
 
-mkdir package/community
-pushd package/community
+# mkdir package/community
+pushd package
 
 # 系统相关应用
 #Cpufreq
@@ -55,45 +55,45 @@ pushd package/community
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-lib-mac-vendor
 mkdir cpufreq
 mkdir luci-app-cpufreq
-cp -rf ../../kiddin9/cpufreq/* cpufreq
-cp -rf ../../kiddin9/luci-app-cpufreq/* luci-app-cpufreq
+cp -rf ../kiddin9/cpufreq/* cpufreq
+cp -rf ../kiddin9/luci-app-cpufreq/* luci-app-cpufreq
 #Fan
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-fan
 mkdir fancontrol
 mkdir luci-app-fancontrol
-cp -rf ../../JiaY-shi/fancontrol/* fancontrol
-cp -rf ../../JiaY-shi/luci-app-fancontrol/* luci-app-fancontrol
+cp -rf ../JiaY-shi/fancontrol/* fancontrol
+cp -rf ../JiaY-shi/luci-app-fancontrol/* luci-app-fancontrol
 #Poweroff
 # mkdir luci-app-poweroff
-# cp -rf ../../kiddin9/luci-app-poweroff/* luci-app-poweroff
+# cp -rf ../kiddin9/luci-app-poweroff/* luci-app-poweroff
 #Diskman
 mkdir luci-app-diskman
-cp -rf ../../kiddin9/luci-app-diskman/* luci-app-diskman
+cp -rf ../kiddin9/luci-app-diskman/* luci-app-diskman
 #Fileassistant
 mkdir luci-app-fileassistant
-cp -rf ../../kiddin9/luci-app-fileassistant/* luci-app-fileassistant
+cp -rf ../kiddin9/luci-app-fileassistant/* luci-app-fileassistant
 #Guest-wifi
 mkdir luci-app-guest-wifi
-cp -rf ../../kiddin9/luci-app-guest-wifi/* luci-app-guest-wifi
+cp -rf ../kiddin9/luci-app-guest-wifi/* luci-app-guest-wifi
 #Onliner (need luci-app-nlbwmon)
 mkdir luci-app-onliner
-cp -rf ../../kiddin9/luci-app-onliner/* luci-app-onliner
+cp -rf ../kiddin9/luci-app-onliner/* luci-app-onliner
 #svn export https://github.com/rufengsuixing/luci-app-onliner/trunk luci-app-onliner
 #Eqos
 # mkdir luci-app-eqos
-# cp -rf ../../kiddin9/luci-app-eqos/* luci-app-eqos
+# cp -rf ../kiddin9/luci-app-eqos/* luci-app-eqos
 #Wolplus
 mkdir luci-app-wolplus
-cp -rf ../../kiddin9/luci-app-wolplus/* luci-app-wolplus
+cp -rf ../kiddin9/luci-app-wolplus/* luci-app-wolplus
 #WiFischedule
 # mkdir luci-app-wifischedule
-# cp -rf ../../kiddin9/luci-app-wifischedule/* luci-app-wifischedule
+# cp -rf ../kiddin9/luci-app-wifischedule/* luci-app-wifischedule
 #RAMfree
 mkdir luci-app-ramfree
-cp -rf ../../kiddin9/luci-app-ramfree/* luci-app-ramfree
+cp -rf ../kiddin9/luci-app-ramfree/* luci-app-ramfree
 #终端
 # mkdir luci-app-ttyd
-# cp -rf ../../kiddin9/luci-app-ttyd/* luci-app-ttyd
+# cp -rf ../kiddin9/luci-app-ttyd/* luci-app-ttyd
 
 # 存储相关应用
 # Gowebdav
@@ -104,24 +104,24 @@ cp -rf ../../kiddin9/luci-app-ramfree/* luci-app-ramfree
 # svn export https://github.com/fw876/helloworld/trunk helloworld
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-ssr-plus
 # mkdir luci-app-ssr-plus
-# cp -rf ../../kiddin9/luci-app-ssr-plus/* luci-app-ssr-plus
-# cp -rf ../../kiddin9/dns2socks/* dns2socks
-# cp -rf ../../kiddin9/lua-neturl/* lua-neturl
-# cp -rf ../../kiddin9/microsocks/* microsocks
-# cp -rf ../../kiddin9/tcping/* tcping
-# cp -rf ../../kiddin9/shadowsocksr-libev/* shadowsocksr-libev
-# cp -rf ../../kiddin9/chinadns-ng/* chinadns-ng
-# cp -rf ../../kiddin9/mosdns/* mosdns
-# cp -rf ../../kiddin9/hysteria/* hysteria
-# cp -rf ../../kiddin9/tuic-client/* tuic-client
-# cp -rf ../../kiddin9/shadow-tls/* shadow-tls
-# cp -rf ../../kiddin9/ipt2socks/* ipt2socks
-# cp -rf ../../kiddin9/naiveproxy/* naiveproxy
-# cp -rf ../../kiddin9/redsocks2/* redsocks2
-# cp -rf ../../kiddin9/shadowsocks-rust/* shadowsocks-rust
-# cp -rf ../../kiddin9/simple-obfs/* simple-obfs
-# cp -rf ../../kiddin9/v2ray-plugin/* v2ray-plugin
-# cp -rf ../../kiddin9/trojan/* trojan
+# cp -rf ../kiddin9/luci-app-ssr-plus/* luci-app-ssr-plus
+# cp -rf ../kiddin9/dns2socks/* dns2socks
+# cp -rf ../kiddin9/lua-neturl/* lua-neturl
+# cp -rf ../kiddin9/microsocks/* microsocks
+# cp -rf ../kiddin9/tcping/* tcping
+# cp -rf ../kiddin9/shadowsocksr-libev/* shadowsocksr-libev
+# cp -rf ../kiddin9/chinadns-ng/* chinadns-ng
+# cp -rf ../kiddin9/mosdns/* mosdns
+# cp -rf ../kiddin9/hysteria/* hysteria
+# cp -rf ../kiddin9/tuic-client/* tuic-client
+# cp -rf ../kiddin9/shadow-tls/* shadow-tls
+# cp -rf ../kiddin9/ipt2socks/* ipt2socks
+# cp -rf ../kiddin9/naiveproxy/* naiveproxy
+# cp -rf ../kiddin9/redsocks2/* redsocks2
+# cp -rf ../kiddin9/shadowsocks-rust/* shadowsocks-rust
+# cp -rf ../kiddin9/simple-obfs/* simple-obfs
+# cp -rf ../kiddin9/v2ray-plugin/* v2ray-plugin
+# cp -rf ../kiddin9/trojan/* trojan
 #Passwall和Passwall2
 # svn export https://github.com/xiaorouji/openwrt-passwall/trunk openwrt-passwall
 # svn export https://github.com/xiaorouji/openwrt-passwall/branches/luci/luci-app-passwall
@@ -134,8 +134,8 @@ cp -rf ../../kiddin9/luci-app-ramfree/* luci-app-ramfree
 # svn export https://github.com/Siriling/OpenWRT-MyConfig/trunk/configs/istoreos/general/applications/luci-app-openclash temp/luci-app-openclash
 # cp -rf temp/luci-app-openclash/* luci-app-openclash
 mkdir luci-app-openclash
-cp -rf ../../kiddin9/luci-app-openclash/* luci-app-openclash
-cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-openclash/* luci-app-openclash
+cp -rf ../kiddin9/luci-app-openclash/* luci-app-openclash
+cp -rf ../MyConfig/configs/istoreos/general/applications/luci-app-openclash/* luci-app-openclash
 #加入OpenClash核心
 # chmod -R a+x $GITHUB_WORKSPACE/scripts/preset-clash-core.sh
 # if [ "$1" = "rk33xx" ]; then
@@ -151,8 +151,8 @@ cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-openclash/*
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/adguardhome
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-adguardhome
 mkdir luci-app-adguardhome
-cp -rf ../../kiddin9/luci-app-adguardhome/* luci-app-adguardhome
-cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-adguardhome/* luci-app-adguardhome
+cp -rf ../kiddin9/luci-app-adguardhome/* luci-app-adguardhome
+cp -rf ../MyConfig/configs/istoreos/general/applications/luci-app-adguardhome/* luci-app-adguardhome
 sed -i 's/拦截DNS服务器/拦截DNS服务器（默认用户名和密码均为root）/' luci-app-adguardhome/po/zh_Hans/adguardhome.po
 sed -i 's/+PACKAGE_$(PKG_NAME)_INCLUDE_binary:adguardhome//' luci-app-adguardhome/Makefile
 #ADGuardHome（kenzok8）
@@ -169,10 +169,10 @@ sed -i 's/+PACKAGE_$(PKG_NAME)_INCLUDE_binary:adguardhome//' luci-app-adguardhom
 
 # docker应用
 # svn export https://github.com/kenzok8/small-package/trunk/luci-app-filebrowser
-# rm -rf ../../customfeeds/luci/applications/luci-app-kodexplorer
+# rm -rf ../customfeeds/luci/applications/luci-app-kodexplorer
 # svn export https://github.com/kenzok8/small-package/trunk/luci-app-kodexplorer
-# rm -rf ../../customfeeds/packages/utils/verysync
-# rm -rf ../../customfeeds/luci/applications/luci-app-verysync
+# rm -rf ../customfeeds/packages/utils/verysync
+# rm -rf ../customfeeds/luci/applications/luci-app-verysync
 # svn export https://github.com/kenzok8/small-package/trunk/verysync
 # svn export https://github.com/kenzok8/small-package/trunk/luci-app-verysync
 
@@ -191,19 +191,19 @@ sed -i 's/+PACKAGE_$(PKG_NAME)_INCLUDE_binary:adguardhome//' luci-app-adguardhom
 #内网穿透
 #Zerotier
 mkdir luci-app-zerotier
-cp -rf ../../kiddin9/luci-app-zerotier/* luci-app-zerotier
+cp -rf ../kiddin9/luci-app-zerotier/* luci-app-zerotier
 
 # 其他
 #Socat
 mkdir luci-app-socat
-cp -rf ../../kiddin9/luci-app-socat/* luci-app-socat
+cp -rf ../kiddin9/luci-app-socat/* luci-app-socat
 #Unblockneteasemusic
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/UnblockNeteaseMusic
 # svn export https://github.com/kiddin9/openwrt-packages/trunk/luci-app-unblockneteasemusic
 mkdir UnblockNeteaseMusic
 mkdir luci-app-unblockneteasemusic
-cp -rf ../../kiddin9/UnblockNeteaseMusic/* UnblockNeteaseMusic
-cp -rf ../../kiddin9/luci-app-unblockneteasemusic/* luci-app-unblockneteasemusic
+cp -rf ../kiddin9/UnblockNeteaseMusic/* UnblockNeteaseMusic
+cp -rf ../kiddin9/luci-app-unblockneteasemusic/* luci-app-unblockneteasemusic
 #OpenAppFilter
 # svn export https://github.com/destan19/OpenAppFilter/trunk OpenAppFilter
 
@@ -212,16 +212,16 @@ mkdir pdnsd-alt
 mkdir dnsforwarder
 mkdir shortcut-fe
 mkdir luci-app-turboacc
-cp -rf ../../kiddin9/pdnsd-alt/* pdnsd-alt
-cp -rf ../../kiddin9/dnsforwarder/* dnsforwarder
-cp -rf ../../kiddin9/shortcut-fe/* shortcut-fe
-cp -rf ../../kiddin9/luci-app-turboacc/* luci-app-turboacc
+cp -rf ../kiddin9/pdnsd-alt/* pdnsd-alt
+cp -rf ../kiddin9/dnsforwarder/* dnsforwarder
+cp -rf ../kiddin9/shortcut-fe/* shortcut-fe
+cp -rf ../kiddin9/luci-app-turboacc/* luci-app-turboacc
 
 #主题
 mkdir luci-theme-argon
 mkdir luci-app-argon-config
-cp -rf ../../kiddin9/luci-theme-argon/* luci-theme-argon
-cp -rf ../../kiddin9/luci-app-argon-config/* luci-app-argon-config
+cp -rf ../kiddin9/luci-theme-argon/* luci-theme-argon
+cp -rf ../kiddin9/luci-app-argon-config/* luci-app-argon-config
 
 # iStore应用
 mkdir taskd
@@ -230,33 +230,33 @@ mkdir luci-lib-xterm
 mkdir luci-app-store
 mkdir quickstart
 mkdir luci-app-quickstart
-cp -rf ../../kiddin9/taskd/* taskd
-cp -rf ../../kiddin9/luci-lib-taskd/* luci-lib-taskd
-cp -rf ../../kiddin9/luci-lib-xterm/* luci-lib-xterm
-cp -rf ../../kiddin9/luci-app-store/* luci-app-store
-cp -rf ../../kiddin9/quickstart/* quickstart
-cp -rf ../../kiddin9/luci-app-quickstart/* luci-app-quickstart
+cp -rf ../kiddin9/taskd/* taskd
+cp -rf ../kiddin9/luci-lib-taskd/* luci-lib-taskd
+cp -rf ../kiddin9/luci-lib-xterm/* luci-lib-xterm
+cp -rf ../kiddin9/luci-app-store/* luci-app-store
+cp -rf ../kiddin9/quickstart/* quickstart
+cp -rf ../kiddin9/luci-app-quickstart/* luci-app-quickstart
 
 # 5G通信模组拨号工具
 mkdir quectel_QMI_WWAN
 mkdir quectel_cm_5G
 # mkdir quectel_MHI
 # mkdir luci-app-hypermodem
-cp -rf ../../Modem-Support/quectel_QMI_WWAN/* quectel_QMI_WWAN
-cp -rf ../../Modem-Support/quectel_cm_5G/* quectel_cm_5G
-# cp -rf ../../Modem-Support/quectel_MHI/* quectel_MHI
-# cp -rf ../../Modem-Support/luci-app-hypermodem/* luci-app-hypermodem
+cp -rf ../Modem-Support/quectel_QMI_WWAN/* quectel_QMI_WWAN
+cp -rf ../Modem-Support/quectel_cm_5G/* quectel_cm_5G
+# cp -rf ../Modem-Support/quectel_MHI/* quectel_MHI
+# cp -rf ../Modem-Support/luci-app-hypermodem/* luci-app-hypermodem
 
 # 5G模组短信插件
 mkdir sms-tool
 mkdir luci-app-sms-tool
-cp -rf ../../Modem-Support/sms-tool/* sms-tool
-cp -rf ../../Modem-Support/luci-app-sms-tool/* luci-app-sms-tool
-cp -rf ../../MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* luci-app-sms-tool
+cp -rf ../Modem-Support/sms-tool/* sms-tool
+cp -rf ../Modem-Support/luci-app-sms-tool/* luci-app-sms-tool
+cp -rf ../MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* luci-app-sms-tool
 
 # 5G模组管理插件+AT工具
 mkdir luci-app-modem
-cp -rf ../../Modem-Support/luci-app-modem/* luci-app-modem
+cp -rf ../Modem-Support/luci-app-modem/* luci-app-modem
 sed -i 's/+kmod-pcie_mhi \\//' luci-app-modem/Makefile
 popd
 
