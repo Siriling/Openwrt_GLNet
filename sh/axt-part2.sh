@@ -257,7 +257,8 @@ cp -rf ../MyConfig/configs/istoreos/general/applications/luci-app-sms-tool/* luc
 # 5G模组管理插件+AT工具
 mkdir luci-app-modem
 cp -rf ../Modem-Support/luci-app-modem/* luci-app-modem
-sed -i 's/+kmod-pcie_mhi \\//' luci-app-modem/Makefile
+# sed -i 's/+kmod-pcie_mhi \\//' luci-app-modem/Makefile
+sed -i "/kmod-pcie_mhi/d" luci-app-modem/Makefile
 popd
 
 # 5G模组拨号脚本
