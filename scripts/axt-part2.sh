@@ -224,14 +224,14 @@ cp -rf ../kiddin9/luci-theme-argon/* luci-theme-argon
 cp -rf ../kiddin9/luci-app-argon-config/* luci-app-argon-config
 
 # iStore应用
-# mkdir taskd
-# mkdir luci-lib-taskd
+mkdir taskd
+mkdir luci-lib-taskd
 mkdir luci-lib-xterm
 mkdir luci-app-store
 mkdir quickstart
 mkdir luci-app-quickstart
-# cp -rf ../kiddin9/taskd/* taskd
-# cp -rf ../kiddin9/luci-lib-taskd/* luci-lib-taskd
+cp -rf ../kiddin9/taskd/* taskd
+cp -rf ../kiddin9/luci-lib-taskd/* luci-lib-taskd
 cp -rf ../kiddin9/luci-lib-xterm/* luci-lib-xterm
 cp -rf ../kiddin9/luci-app-store/* luci-app-store
 cp -rf ../kiddin9/quickstart/* quickstart
